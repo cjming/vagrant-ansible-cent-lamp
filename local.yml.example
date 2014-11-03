@@ -5,3 +5,4 @@
 ###
 
 synced_folder: "/path/to/sites" # Location of all local sites
+memory: "2048" # System memory to allocate to your VM
