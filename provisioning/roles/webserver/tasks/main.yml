@@ -78,3 +78,12 @@
   tags:
     - webserver
     - php
+
+- name: ensure apc.ini is present
+  copy: src=apc.ini dest=/etc/php.d/apc.ini mode=0644
+  sudo: yes
+  notify:
+    - reload httpd
+  tags:
+    - webserver
+    - php
